@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data: photos and generated outputs stay local
+data/
+outputs/
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.npy
+*.ply
+
+# Editor / OS
+.vscode/
+.DS_Store
