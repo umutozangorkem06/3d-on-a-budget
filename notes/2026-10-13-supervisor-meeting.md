@@ -1,5 +1,8 @@
-point cloud comparement
-depth map into the point cloud 
-great scale depth map where the brightnes is portional to distance to viewer
-3d registiration look
-look at mashlab - may be python library 
+# Supervisor meeting, 13 October 2026
+
+- Compare the point clouds that the different methods produce.
+- Turn depth maps into point clouds.
+- Save depth maps as greyscale images, with brightness showing distance from the viewer.
+- Look into 3D registration.
+- Look at MeshLab and whether it can be used from Python.
+- Try the pipeline on a Raspberry Pi. A Hailo-8 accelerator will follow the week after.
