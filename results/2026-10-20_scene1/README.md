@@ -38,11 +38,17 @@ Per-photo times: [depth_anything_laptop_timing.txt](depth_anything_laptop_timing
 
 ![Photo, Depth Anything V2 Small and VGGT-1B depth for views 03, 12 and 21](depth_compare.jpg)
 
-Bright is near. The VGGT maps are shown as 1 / depth, normalised per image. Photos and Depth Anything maps are cropped to the square that VGGT sees.
+Made with [depth_figure.py](../../depth_figure.py). Bright is near. The VGGT maps are shown as 1 / depth, normalised per image. Photos and Depth Anything maps are cropped to the square that VGGT sees.
 
 ## VGGT point clouds in MeshLab
 
-![VGGT point cloud at confidence 5.0 and 2.0](pointclouds.jpg)
+Confidence ≥ 5.0:
+
+![VGGT point cloud, confidence 5.0](meshlab_conf5.jpg)
+
+Confidence ≥ 2.0 (500,000 points sampled from 1,528,083):
+
+![VGGT point cloud, confidence 2.0](meshlab_conf2.jpg)
 
 ## Notes
 
