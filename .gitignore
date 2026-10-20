@@ -13,6 +13,7 @@ outputs/
 *.heic
 *.npy
 *.ply
+!results/**/*.jpg
 
 # Editor / OS
 .vscode/
