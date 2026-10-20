@@ -1,8 +1,8 @@
-# Supervisor meeting, 13 October 2026
+# Supervisor meeting, 13 Oct 2026
 
-- Compare the point clouds that the different methods produce.
-- Turn depth maps into point clouds.
-- Save depth maps as greyscale images, with brightness showing distance from the viewer.
-- Look into 3D registration.
-- Look at MeshLab and whether it can be used from Python.
-- Try the pipeline on a Raspberry Pi. A Hailo-8 accelerator will follow the week after.
+- compare the point clouds from the different methods
+- turn depth maps into point clouds
+- save depth maps as greyscale images (brightness encodes distance to the viewer)
+- look into 3D registration
+- MeshLab: check if there is a Python library for it
+- try it on a Raspberry Pi, Hailo-8 the week after
