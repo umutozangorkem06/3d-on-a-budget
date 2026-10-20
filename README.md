@@ -28,16 +28,14 @@ Scene 1 is 23 photos of a jug on a placemat. Full numbers and figures are in [re
 - Turn the Depth Anything depth maps into point clouds using the VGGT cameras, align them to the VGGT cloud with ICP and measure the difference with Chamfer distance.
 - More scenes, and at least three timing runs for every measurement.
 
-## Repository
+## Files
 
-| Path | Contents |
-|---|---|
-| `depth_single.py` | Depth Anything V2 Small on one photo |
-| `depth_batch.py` | Depth Anything V2 Small on a folder of photos, with per-photo timing |
-| `kaggle/bootstrap.ipynb` | Clones this repo into a Kaggle session |
-| `kaggle/vggt_scene1.ipynb` | VGGT-1B on Kaggle: timing, point cloud and cameras |
-| `notes/` | Supervisor meeting notes |
-| `results/` | One folder per experiment |
+- `depth_single.py`: Depth Anything V2 Small on one photo
+- `depth_batch.py`: the same on a folder of photos, with per-photo timing
+- `depth_figure.py`: the photo / Depth Anything / VGGT comparison figure
+- `kaggle/vggt_scene1.ipynb`: VGGT-1B on Kaggle (timing, point cloud, cameras)
+- `notes/`: supervisor meeting notes
+- `results/`: one folder per experiment
 
 ## Running
 
@@ -52,6 +50,8 @@ python depth_batch.py
 ```
 
 Put the photos in `data/scene1/`. Depth maps are written to `outputs/scene1/`. Neither folder is tracked.
+
+`depth_figure.py` also needs `outputs/scene1_vggt_cameras.npz`, which the Kaggle notebook writes.
 
 On Kaggle: import `kaggle/vggt_scene1.ipynb`, turn on a GPU and internet access, and add the photos as a dataset. The notebook clones the official [VGGT repository](https://github.com/facebookresearch/vggt) and downloads the weights from Hugging Face.
 
