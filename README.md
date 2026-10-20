@@ -22,6 +22,8 @@ Scene 1 is 23 photos of a jug on a placemat. Full numbers and figures are in [re
 
 ![Photo, Depth Anything V2 Small and VGGT-1B depth for three views](results/2026-10-20_scene1/depth_compare.jpg)
 
+![VGGT-1B point cloud at confidence threshold 5.0 and 2.0](results/2026-10-20_scene1/pointclouds.jpg)
+
 ## Next
 
 - Run Depth Anything V2 Small on the Raspberry Pi 5, then on the Hailo-8.
@@ -33,6 +35,7 @@ Scene 1 is 23 photos of a jug on a placemat. Full numbers and figures are in [re
 - `depth_single.py`: Depth Anything V2 Small on one photo
 - `depth_batch.py`: the same on a folder of photos, with per-photo timing
 - `depth_figure.py`: the photo / Depth Anything / VGGT comparison figure
+- `pointcloud_figure.py`: renders the VGGT point cloud at two confidence thresholds
 - `kaggle/vggt_scene1.ipynb`: VGGT-1B on Kaggle (timing, point cloud, cameras)
 - `notes/`: supervisor meeting notes
 - `results/`: one folder per experiment
@@ -51,7 +54,7 @@ python depth_batch.py
 
 Put the photos in `data/scene1/`. Depth maps are written to `outputs/scene1/`. Neither folder is tracked.
 
-`depth_figure.py` also needs `outputs/scene1_vggt_cameras.npz`, which the Kaggle notebook writes.
+`depth_figure.py` and `pointcloud_figure.py` also need `outputs/scene1_vggt_cameras.npz`, which the Kaggle notebook writes.
 
 On Kaggle: import `kaggle/vggt_scene1.ipynb`, turn on a GPU and internet access, and add the photos as a dataset. The notebook clones the official [VGGT repository](https://github.com/facebookresearch/vggt) and downloads the weights from Hugging Face.
 
